@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './style.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Hello from './hello';
+import Timer from './timer';
+
+class App extends React.Component {
+    constructor(){
+        super();
+        this.state={
+            title : "سلام دوستان عزیزم"
+        }
+        // this.handleSetTitle = this.handleSetTitle.bind(this)
+    }
+
+    // handleSetTitle = ()=>{
+    //     this.setState({
+    //         title:"به کدیاد خوش آمدید"
+    //     })
+    // }
+
+    render(){
+        return (
+        <div className="main">
+            <Hello title={this.state.title}/>        
+            <Timer handleSetTitle={this.handleSetTitle}/>
+        </div>
+        ) 
+    }
 }
+
 
 export default App;

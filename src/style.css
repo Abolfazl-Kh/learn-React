@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  .main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+    color: chocolate;
+  }
+  
+  .timer{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(146, 240, 216);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: black;
+    color: chocolate;
+  }
+.btn{
+  margin: 10px;
+  padding: 24px 20px;
+  display: inline-block;
+  color: azure;
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.btn-red{
+  background-color: red;
+}
+.btn-green{
+  background-color: green;
+}
+.btn-light{
+  background-color: rgb(141, 140, 140);
+}
